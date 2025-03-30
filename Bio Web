@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid skyblue;
+        }
+        h2 {
+            color: skyblue;
+            margin: 10px 0;
+        }
+        .about {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .contact-btn {
+            background: skyblue;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .contact-btn:hover {
+            transform: scale(1.1);
+        }
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .menu div {
+            width: 30px;
+            height: 4px;
+            background: white;
+            margin: 5px;
+        }
+        .menu-content {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu-content a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="menu-content" id="menuContent">
+        <a href="https://www.instagram.com/_sdlyrics__?igsh=MThnMnhnOHBqa213eQ==">Instagram</a>
+        <a href="https://t.me/Dramacampuss">Telegram</a>
+    </div>
+    <div class="container">
+        <img src="https://envs.sh/_Pf.jpg" alt="Profile Picture" class="profile-pic">
+        <h2>爪𝑎ᴻ𝑎ŝ</h2>
+        <p class="about">Life is not about how you live it 😃...Its about how you survive it 🙃</p>
+        <button class="contact-btn" onclick="window.location.href='https://t.me/blukivess'">Contact</button>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menuContent");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
